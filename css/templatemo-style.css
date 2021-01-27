@@ -9,7 +9,7 @@ https://templatemo.com/tm-516-known
 @import url('https://fonts.googleapis.com/css?family=Muli:300,700|Nunito');
 
 body {
-    background: #ffffff;
+    background: #151515;
     font-family: 'Nunito', sans-serif;
     overflow-x: hidden;
     /*padding-top: 70px;*/
@@ -292,11 +292,11 @@ section {
     flex-flow: row nowrap;
     justify-content: center;
     align-items: center;
-    background: none repeat scroll 0 0 #ffffff;
+    background: none repeat scroll 0 0 #151515;
 }
 
 .spinner {
-    border: 1px solid transparent;
+    border: 1px solid #7e1773;
     border-radius: 3px;
     position: relative;
 }
@@ -312,8 +312,8 @@ section {
     margin-top: -10px;
     margin-left: -10px;
     border-radius: 50%;
-    border: 1px solid #575757;
-    border-top-color: #ffffff;
+    border: 1px solid #7e1773;
+    border-top-color: #151515;
     animation: spinner .9s linear infinite;
 }
 
