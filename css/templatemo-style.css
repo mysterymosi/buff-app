@@ -1138,9 +1138,9 @@ footer .social-icon {
   /*background: #151515;*/
 }
 
-#genre h3,
-#genre i {
-  color: #ffffff
+#genre h3 {
+  color: #ffffff;
+  font-size: 1.5rem;
 }
 
 .sort-by h4 {
@@ -1345,4 +1345,12 @@ html, body {
 
 .swiper-button-next, .swiper-button-prev {
     top: 145px !important;
+}
+
+.banner-star {
+    object-fit: cover;
+    width: 20px !important;
+    display: inline;
+    float: left;
+    margin-right: 5px;
 }
