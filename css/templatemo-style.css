@@ -11,7 +11,7 @@ https://templatemo.com/tm-516-known
 body {
   /*background: #151515;*/
   background: 000;
-  font-family: 'Nunito', sans-serif;
+  font-family: 'Roboto', sans-serif;
   overflow-x: hidden;
   /*padding-top: 70px;*/
 }
@@ -27,15 +27,16 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Muli', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: bold;
   line-height: inherit;
 }
 
 h1 {
   color: #252525;
-  font-size: 3em;
-  line-height: normal;
+  font-size: 70px;
+  font-weight: 700;
+  line-height: 82.03px;
 }
 
 h2 {
@@ -175,6 +176,7 @@ section {
 #testimonial {
   /*background: #151515;*/
   padding-top: 0;
+  padding-bottom: 25px;
 }
 
 #team,
@@ -237,13 +239,22 @@ section {
 
 .section-btn {
   background: #7e1773;
-  border-radius: 50px;
+  border-radius: 40px;
   border: 1px solid #7e1773;
   color: #ffffff;
   font-size: inherit;
   font-weight: normal;
+  /*padding: 25px 85px;*/
   padding: 15px 30px;
+  /*width: 255px;
+  height: 80px;*/
   /*transition: 0.5s;*/
+}
+
+.section-btn.rent {
+  padding: 25px 85px;
+  width: 255px;
+  height: 80px;
 }
 
 .section-btn:hover {
@@ -345,8 +356,8 @@ section {
 
 .custom-navbar .navbar-brand {
   color: #ffffff;
-  font-size: 18px;
-  font-weight: bold;
+  font-size: 40px;
+  font-weight: 700;
   line-height: 40px;
 }
 
@@ -374,6 +385,8 @@ section {
 .custom-navbar .nav li a {
   line-height: 40px;
   color: #ffffff;
+  font-size: 20px;
+  font-weight: 500;
   padding-right: 22px;
   padding-left: 22px;
 }
@@ -423,10 +436,15 @@ section {
 
 #home h3 {
   color: #ffffff;
-  font-size: 16px;
+  font-size: 24px;
   font-weight: 300;
   margin: 0;
   padding: 5px 0 40px 0;
+}
+
+#home .rating {
+  font-size: 24px;
+  font-weight: 300;
 }
 
 @media (min-width: 768px) {
@@ -1136,6 +1154,7 @@ footer .social-icon {
 
 #genre {
   /*background: #151515;*/
+  padding-top: 0 !important;
 }
 
 #genre h3 {
@@ -1261,7 +1280,7 @@ body {
 
 .img-caption {
   color: #ffffff;
-  font-size: 17px;
+  font-size: 13px;
   line-height: 23.44px;
   margin-top: 20px;
   text-align: left;
@@ -1274,12 +1293,13 @@ body {
 
 .img-icons span {
   color: #FFE600;
-  font-size: 14px;
+  font-size: 11px;
 }
 
 /* swiper styles*/
 
-html, body {
+html,
+body {
   position: relative;
   height: 100%;
 }
@@ -1302,9 +1322,9 @@ html, body {
 .swiper-slide {
   text-align: center;
   font-size: 18px;
-  
+
   /* Update: Removed the Flex property - IE FIX */
- 
+
 }
 
 .swiper-wrapper img {
@@ -1327,11 +1347,12 @@ html, body {
 .netflix-slider .swiper-slide {
   -webkit-transition: 250ms all;
   transition: 250ms all;
+  /*margin-right: 0 !important;*/
 }
 
 .netflix-slider .swiper-slide:hover {
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
+  -webkit-transform: scale(1.05);
+  transform: scale(1.05);
   z-index: 1;
 }
 
@@ -1343,14 +1364,47 @@ html, body {
   margin: 0 -40px;
 }
 
-.swiper-button-next, .swiper-button-prev {
-    top: 145px !important;
+.swiper-button-next,
+.swiper-button-prev {
+  top: 145px !important;
 }
 
 .banner-star {
-    object-fit: cover;
-    width: 20px !important;
-    display: inline;
-    float: left;
-    margin-right: 5px;
+  object-fit: cover;
+  width: 20px !important;
+  display: inline;
+  float: left;
+  margin-right: 5px;
+}
+
+.banner-star.rate {
+    margin-top: 6px;
+}
+
+.section-btn span {
+  font-size: 30px;
+  font-weight: 500;
+  margin-left: 10px;
+  line-height: 23.16px;
+}
+
+.section-btn.btn-black {
+  background: #000000;
+  border-radius: 40px;
+  border: 1px solid #000000;
+  padding: 25px 50px;
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 23.16px;
+  text-align: center;
+}
+
+.section-btn.btn-black:hover {
+  background: #000000 !important;
+  border: none !important;
+  color: #ffffff !important;
+}
+
+.image-rounded {
+    border-radius: 50%;
 }
