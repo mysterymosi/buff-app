@@ -1429,6 +1429,30 @@ body {
   font-weight: 400;
 }
 
+.series-section-title {
+  margin-left: 10px;
+  /*margin-bottom: -10px;*/
+}
+
+.series-section-title h3 {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 29.3px;
+  color: #ffffff;
+}
+
+.series-section-title hr {
+  border: 1px solid #c07ab9;
+  width: 150px;
+  height: 0px;
+  margin-left: 0;
+  margin-bottom: 0;
+  margin-top: 5px;
+}
+
+.mb-neg {
+  margin-bottom: -73px;
+}
 /* .img-icon {
   width: 10px;
 }*/
