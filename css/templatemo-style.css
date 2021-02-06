@@ -1378,7 +1378,7 @@ body {
 }
 
 .banner-star.rate {
-    margin-top: 6px;
+  margin-top: 6px;
 }
 
 .section-btn span {
@@ -1406,5 +1406,36 @@ body {
 }
 
 .image-rounded {
-    border-radius: 50%;
+  border-radius: 50%;
+}
+
+.wt-5 {
+  width: 181px !important;
+  height: 181px !important;
+  box-shadow: 0px 1px 4px 8px rgba(189, 180, 180, 0.5);
+}
+
+.pt-5 {
+  padding-top: 40px !important;
+}
+
+.active-friends.img-caption {
+  text-align: center;
+}
+
+.slider-title .active {
+  color: #ffe300;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+/* .img-icon {
+  width: 10px;
+}*/
+@media (max-width: 500px) {
+
+  .swiper-button-next,
+  .swiper-button-prev {
+    display: none;
+  }
 }
