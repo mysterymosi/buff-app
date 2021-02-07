@@ -484,6 +484,18 @@ section {
   background-position: center;
 }
 
+.home-slider .item-single {
+  background-image: url(../images/mulan.jpg) !important;
+  background-position: center;
+  border-radius: 0px 0px 31px 31px;
+}
+
+.home-slider .item-series {
+  background-image: url(../images/peaky.png) !important;
+  background-position: center;
+  border-radius: 0px 0px 31px 31px;
+}
+
 .home-slider .item-first:before,
 .home-slider .item-second:before,
 .home-slider .item-third:before {
@@ -1434,6 +1446,10 @@ body {
   /*margin-bottom: -10px;*/
 }
 
+.series-section-title.single h3{
+  margin-bottom: -35px;
+}
+
 .series-section-title h3 {
   font-size: 20px;
   font-weight: 700;
@@ -1453,9 +1469,65 @@ body {
 .mb-neg {
   margin-bottom: -73px;
 }
-/* .img-icon {
-  width: 10px;
-}*/
+
+.mx-auto {
+  margin: 0 auto !important;
+}
+
+.item-single img {
+  width: 228px !important;
+  height: 228px;
+  margin: 0 auto;
+}
+
+.single-title {
+  display: flex;
+  justify-content: space-between;
+}
+
+.single-title h1, .single-title span {
+  color: #ffffff;
+  display: inline;
+}
+
+.single-title img {
+  width: 33.47px;
+  height: 33.47px;
+  margin-bottom: 19px;
+  margin-left: 15px;
+}
+
+.single-title span {
+  font-size: 24px;
+}
+
+.single-title__deets:nth-child(2) img {
+  width: 70px;
+  height: 70px;
+}
+
+.single-title__deets p {
+  font-size: 18px;
+  font-weight: 300px;
+  color: #ffffff;
+  line-height: 35.16px;
+}
+
+#episodes .episode-img {
+  /*object-fit: cover;
+  float: left;*/
+  width: 236px;
+  height: 150px;
+}
+
+.episode-details h3, .episode-details .desc {
+  color: #ffffff;
+}
+
+.d-flex {
+  display: flex;
+  justify-content: space-between;
+}
 @media (max-width: 500px) {
 
   .swiper-button-next,
