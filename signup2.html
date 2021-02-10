@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" type="text/css" href="css/animate.css">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="css/mobster.css">
+  <link href="https://fonts.googleapis.com/css?family=Poppins:400,300,500,600,700" rel="stylesheet">
+  <title>Buff</title>
+  <style>
+    .bg-image {
+  background: url(images/sexed.svg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.form-control {
+  background: transparent;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 2px solid #ffffff;
+  box-shadow: none;
+  border-radius: 0;
+  color: #fff !important;
+}
+
+.form-control:focus {
+  background: transparent;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 2px solid #ffffff;
+  box-shadow: none;
+}
+
+::placeholder {
+  color: #ffffff !important;
+}
+
+.overlay {
+  background: linear-gradient(180.46deg, rgba(136, 3, 85, 0.893) -3.07%, rgba(17, 17, 17, 0.95) 81.22%);
+}
+
+.mobile-preview1 {
+  width: 100%;
+  height: auto;
+  border-radius: 30px;
+}
+
+.hero-home-2 .mobile-preview1 {
+  border-radius: 40px;
+}
+
+.navbar-brand {
+	color: #ffffff !important;
+	font-size: 20px;
+	line-height: 52.32px;
+}
+
+.navbar {
+	background: transparent !important;
+  padding: 12px 0;
+  margin-bottom: 0;
+  padding: 0;
+  border-bottom: 0;
+}
+
+</style>
+</head>
+
+<body>
+  <!-- As a link -->
+  <!-- <nav class="navbar navbar-light bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img src="images/buff-logo.png" width="50" height="50" class="d-inline-block align-top">
+        Buff
+      </a>
+    </div>
+  </nav>
+ -->  <div class="page-hero-section bg-image hero-home-2">
+    <div class="overlay"></div>
+    <div class="hero-caption">
+      <div class="container fg-white h-100">
+        <div class="row align-items-center h-100">
+          <div v-if="!isAddressForm" class="col-lg-7 d-lg-block wow fadeInUp mx-auto">
+            <!-- <div class="form-title">
+              <h3 class="text-center">Sign up</h3>
+            </div> -->
+            <div class="shadow floating-animate">
+              <!-- <img src="../assets/img/app_showcase.svg" alt=""> -->
+              <form>
+                <div class="form-group mb-5">
+                  <label class="control-label sr-only" for="name"></label>
+                  <input v-model="user.name" id="name" type="text" name="Full Name" placeholder="Full Name" class="form-control" required>
+                </div>
+                <div class="form-group mb-5">
+                  <label class="control-label sr-only" for="username"></label>
+                  <input v-model="user.name" id="username" type="text" name="Username" placeholder="Username" class="form-control" required>
+                </div>
+                <div class="form-group mb-5">
+                  <label class="control-label sr-only" for="password"></label>
+                  <input v-model="user.password" id="password" type="password" placeholder="Password" class="form-control" required>
+                </div>
+                <div class="form-group mb-5">
+                  <label class="control-label sr-only" for="confirm_password"></label>
+                  <input v-model="user.confirm_password" id="confirm_password" type="password" placeholder="Confirm password" class="form-control" required>
+                </div>
+                <button style="width: 100%; border-radius: 40px; padding: 20px; background-color: #880355;" class="btn btn-dark">Sign up</button>
+                <div class="mt-3 text-center mx-auto">
+                  <a style="color: #fffcfc; text-decoration: none;" href="login.html">Login</a>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
