@@ -11,7 +11,7 @@ https://templatemo.com/tm-516-known
 body {
   /*background: #151515;*/
   background: 000;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Poppins', sans-serif;
   overflow-x: hidden;
   /*padding-top: 70px;*/
 }
@@ -27,7 +27,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-weight: bold;
   line-height: inherit;
 }
@@ -1446,7 +1446,7 @@ body {
   /*margin-bottom: -10px;*/
 }
 
-.series-section-title.single h3{
+.series-section-title.single h3 {
   margin-bottom: -35px;
 }
 
@@ -1485,7 +1485,8 @@ body {
   justify-content: space-between;
 }
 
-.single-title h1, .single-title span {
+.single-title h1,
+.single-title span {
   color: #ffffff;
   display: inline;
 }
@@ -1520,14 +1521,99 @@ body {
   height: 150px;
 }
 
-.episode-details h3, .episode-details .desc {
+.episode-details {
+  width: 20%;
+}
+
+.episode-details .section-btn {
+  border-radius: 10px;
+  width: 172px;
+}
+
+.episode-details .btn-grey {
+  background-color: #9b9b9b;
+  border-color: #9b9b9b;
+}
+
+.episode-details h3,
+.episode-details .desc {
   color: #ffffff;
+}
+
+.episode-details.cinema h3 {
+  font-size: 30px;
+}
+
+.img-metadata.cinema {
+  margin-top: 15px;
 }
 
 .d-flex {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
+
+.cinema-title {
+  display: flex;
+  justify-content: space-between;
+}
+
+.cinema-title .view-all {
+  opacity: 60%;
+}
+
+.text-white {
+  color: #ffffff;
+}
+
+#episodes .img-caption {
+  font-size: 30px;
+}
+
+.price h3 {
+  color: #ffffff;
+  font-size: 40px;
+}
+
+/*.input-group {
+  width: 270px;
+  margin: 0 auto;
+}*/
+
+.input-group-addon.addon-1,
+.input-group-addon.addon-2,
+.cinema-input {
+  border: 0;
+  height: 56px;
+  background: rgba(196, 196, 196, 0.44);
+}
+
+.input-group-addon.addon-2 {
+  border-top-right-radius: 65px;
+  border-bottom-right-radius: 65px;
+}
+
+.input-group-addon.addon-1 {
+  border-top-left-radius: 65px;
+  border-bottom-left-radius: 65px;
+}
+
+#single-details {
+  padding-top: 120px;
+}
+
+.cinema-input {
+  color: #ffffff;
+}
+
+.cinema-input::placeholder {
+  color: #ffffff;
+  font-size: 26px;
+  font-weight: 700;
+  text-align: center;
+}
+
 @media (max-width: 500px) {
 
   .swiper-button-next,
