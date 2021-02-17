@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" type="text/css" href="css/animate.css">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="css/mobster.css">
+  <link href="https://fonts.googleapis.com/css?family=Poppins:400,300,500,600,700" rel="stylesheet">
+  <title>Buff</title>
+  <style>
+  .service-section {
+    padding-bottom: 120px;
+  }
+
+  .service-section .single-service {
+    border-radius: 44px;
+    position: relative;
+    background-color: #f5f5f56b;
+    padding: 40px 30px;
+    -webkit-box-shadow: 0 7px 20px -10px rgba(171, 171, 171, 0.7);
+    -moz-box-shadow: 0 7px 20px -10px rgba(171, 171, 171, 0.7);
+    box-shadow: 0 7px 20px -10px rgba(171, 171, 171, 0.7);
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+  }
+
+  .service-section .single-service i {
+    font-size: 35px;
+    color: #222;
+  }
+
+  .service-section .single-service h4 {
+    margin: 10px 0px;
+  }
+
+  .service-section .single-service p {
+    margin-bottom: 0px;
+  }
+
+  .service-section .single-service:hover {
+    -webkit-transform: translateY(-10px);
+    -moz-transform: translateY(-10px);
+    -ms-transform: translateY(-10px);
+    -o-transform: translateY(-10px);
+    transform: translateY(-10px);
+    -webkit-box-shadow: 0 10px 50px -12px rgba(171, 171, 171, 0.9);
+    -moz-box-shadow: 0 10px 50px -12px rgba(171, 171, 171, 0.9);
+    box-shadow: 0 10px 50px -12px rgba(171, 171, 171, 0.9);
+  }
+
+  .service-section .owl-dots {
+    text-align: center;
+    margin-top: 30px;
+  }
+
+  .service-section .owl-dots .owl-dot {
+    width: 14px;
+    height: 14px;
+    background: #eee;
+    display: inline-block;
+    margin: 0px 5px;
+  }
+
+  .service-section .owl-dots .owl-dot.active {
+    background: #691cff;
+  }
+
+  .service-section .owl-dots .owl-dot:focus {
+    outline: none;
+  }
+
+  .single-service .section-btn {
+  border-radius: 10px;
+  width: 272px;
+  background-color: #7E1773;
+  color: #ffffff;
+}
+
+  .bg-image {
+    background: url(images/sexed.svg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+
+  .form-control {
+    background: transparent;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 2px solid #ffffff;
+    box-shadow: none;
+    border-radius: 0;
+    color: #fff !important;
+  }
+
+  .form-control:focus {
+    background: transparent;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 2px solid #ffffff;
+    box-shadow: none;
+  }
+
+  ::placeholder {
+    color: #ffffff !important;
+  }
+
+  .overlay {
+    background: linear-gradient(180.46deg, rgba(136, 3, 85, 0.893) -3.07%, rgba(17, 17, 17, 0.95) 81.22%);
+  }
+
+  .mobile-preview1 {
+    width: 100%;
+    height: auto;
+    border-radius: 30px;
+  }
+
+  .hero-home-2 .mobile-preview1 {
+    border-radius: 40px;
+  }
+
+  .navbar-brand {
+    color: #ffffff !important;
+    font-size: 20px;
+    line-height: 52.32px;
+  }
+
+  .navbar {
+    background: transparent !important;
+    padding: 12px 0;
+    margin-bottom: 0;
+    padding: 0;
+    border-bottom: 0;
+  }
+  </style>
+</head>
+
+<body>
+  <div class="page-hero-section bg-image hero-home-2">
+    <div class="overlay"></div>
+    <div class="hero-caption service-section">
+      <div class="container fg-white h-100">
+        <div class="row align-items-center h-100">
+          <div v-if="!isAddressForm" class="col-lg-12 d-lg-block wow fadeInUp mx-auto">
+            <div class="section-title text-center mb-5">
+              <h3>Choose a Plan</h3>
+            </div>
+            <div class="shadow floating-animate">
+              <div class="row">
+                <div class="col-lg-4  col-md-6 pb-30">
+                  <div class="single-service text-center">
+                    <img src="images/free.png">
+                    <h4>Free</h4>
+                    <p>
+                      No Ads
+                    </p>
+                    <p>Limited Movies</p>
+
+                    <p>$0.00</p>
+                    <a href="#feature" class="section-btn btn btn-default smoothScroll mt-5">Subscribe</a>
+                  </div>
+                </div>
+                <div class="col-lg-4  col-md-6 pb-30">
+                  <div class="single-service text-center">
+                    <img src="images/monthly.png">
+                    <h4>Monthly</h4>
+                    <p>
+                      No Ads
+                    </p>
+                    <p>Limited Movies</p>
+                    <p>$0.00</p>
+                    <a href="#feature" class="section-btn btn btn-default smoothScroll mt-5">Subscribe</a>
+                  </div>
+                </div>
+                <div class="col-lg-4  col-md-6 pb-30">
+                  <div class="single-service text-center">
+                    <img src="images/rent.png">
+                    <h4>Monthly</h4>
+                    <p>$0.00</p>
+                    <p>
+                      No Ads
+                    </p>
+                    <p>Limited Movies</p>
+                    <a href="#feature" class="section-btn btn btn-default smoothScroll mt-5">Subscribe</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
