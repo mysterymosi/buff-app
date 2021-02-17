@@ -6,6 +6,7 @@
   <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
   <link rel="stylesheet" type="text/css" href="css/mobster.css">
   <link href="https://fonts.googleapis.com/css?family=Poppins:400,300,500,600,700" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pixeden-stroke-7-icon@1.2.3/pe-icon-7-stroke/dist/pe-icon-7-stroke.min.css">
   <title>Buff</title>
   <style>
   .service-section {
@@ -13,10 +14,10 @@
   }
 
   .service-section .single-service {
-    border-radius: 44px;
+    border-radius: 32px;
     position: relative;
     background-color: #f5f5f56b;
-    padding: 40px 30px;
+    padding: 30px 30px;
     -webkit-box-shadow: 0 7px 20px -10px rgba(171, 171, 171, 0.7);
     -moz-box-shadow: 0 7px 20px -10px rgba(171, 171, 171, 0.7);
     box-shadow: 0 7px 20px -10px rgba(171, 171, 171, 0.7);
@@ -37,6 +38,13 @@
 
   .service-section .single-service p {
     margin-bottom: 0px;
+  }
+
+  .single-service img {
+    object-fit: cover;
+    float: left;
+    width: 70px;
+    height: 70px;
   }
 
   .service-section .single-service:hover {
@@ -72,11 +80,17 @@
   }
 
   .single-service .section-btn {
-  border-radius: 10px;
-  width: 272px;
-  background-color: #7E1773;
-  color: #ffffff;
-}
+    border-radius: 10px;
+    width: 272px;
+    background-color: #7E1773;
+    color: #ffffff;
+  }
+
+  .single-service.smaller {
+    padding: 20px 30px;
+    margin-left: 40px;
+    margin-right: 40px;
+  }
 
   .bg-image {
     background: url(images/sexed.svg);
@@ -136,11 +150,46 @@
     padding: 0;
     border-bottom: 0;
   }
+
+  .payment-nav {
+    width: 100%;
+    margin: 3rem 0 0 0;
+  }
+
+  .payment-nav li {
+    text-decoration: none;
+    list-style: none;
+  }
+
+  .payment-nav li:hover {
+    text-decoration: none;
+  }
+
+  .payment-nav ul {
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+  }
+
+  .payment-nav hr {
+    width: 30px;
+  }
+
+  .payment-img {
+    object-fit: cover !important;
+    float: left !important;
+    width: 45px !important;
+    height: 45px !important;
+  }
+
+  .pe-7s-angle-right {
+    color: #ffffff !important;
+  }
   </style>
 </head>
 
 <body>
-  <div class="page-hero-section bg-image hero-home-2">
+  <div class="page-hero-section bg-image hero-home-2 pt-5 pb-5">
     <div class="overlay"></div>
     <div class="hero-caption service-section">
       <div class="container fg-white h-100">
@@ -151,41 +200,64 @@
             </div>
             <div class="shadow floating-animate">
               <div class="row">
-                <div class="col-lg-4 pb-30">
-                  <div class="single-service text-center">
-                    <img src="images/free.png">
-                    <h4>Free</h4>
-                    <p>
-                      No Ads
-                    </p>
-                    <p>Limited Movies</p>
-
-                    <p>$0.00</p>
-                    <a href="#feature" class="section-btn btn btn-default smoothScroll mt-5">Subscribe</a>
+                <div class="col-lg-12 pb-30">
+                  <div class="single-service text-center d-flex justify-content-between align-items-center">
+                    <div class="d-flex justify-content-between">
+                      <img src="images/free.png">
+                      <div class="pl-5">
+                        <h4>Monthly</h4>
+                        <p>
+                          $10.00 without Ads
+                        </p>
+                      </div>
+                    </div>
+                    <a href="#feature" class="section-btn btn btn-default smoothScroll">Change Plan</a>
                   </div>
                 </div>
-                <div class="col-lg-4 pb-30">
-                  <div class="single-service text-center">
-                    <img src="images/monthly.png">
-                    <h4>Monthly</h4>
-                    <p>
-                      No Ads
-                    </p>
-                    <p>Limited Movies</p>
-                    <p>$0.00</p>
-                    <a href="#feature" class="section-btn btn btn-default smoothScroll mt-5">Subscribe</a>
+              </div>
+              <div class="row">
+                <div class="col-lg-12">
+                  <div class="payment-nav">
+                    <ul>
+                      <li>Payment Method
+                        <hr>
+                      </li>
+                      <li>Payment Details</li>
+                      <li>Checkout</li>
+                    </ul>
                   </div>
                 </div>
-                <div class="col-lg-4 pb-30">
-                  <div class="single-service text-center">
-                    <img src="images/rent.png">
-                    <h4>Monthly</h4>
-                    <p>$0.00</p>
-                    <p>
-                      No Ads
-                    </p>
-                    <p>Limited Movies</p>
-                    <a href="#feature" class="section-btn btn btn-default smoothScroll mt-5">Subscribe</a>
+                <div class="col-lg-12 pb-30">
+                  <div class="single-service smaller text-center d-flex justify-content-between align-items-center">
+                    <div class="d-flex justify-content-between align-items-center">
+                      <img class="payment-img" src="images/card.png">
+                      <div class="pl-5">
+                        <h4>Credit card</h4>
+                      </div>
+                    </div>
+                    <i class="pe-7s-angle-right"></i>
+                  </div>
+                </div>
+                <div class="col-lg-12 pb-30 mt-4">
+                  <div class="single-service smaller text-center d-flex justify-content-between align-items-center">
+                    <div class="d-flex justify-content-between align-items-center">
+                      <img class="payment-img" src="images/paypal.png">
+                      <div class="pl-5">
+                        <h4>Paypal</h4>
+                      </div>
+                    </div>
+                    <i class="pe-7s-angle-right"></i>
+                  </div>
+                </div>
+                <div class="col-lg-12 pb-30 mt-4">
+                  <div class="single-service smaller text-center d-flex justify-content-between align-items-center">
+                    <div class="d-flex justify-content-between align-items-center">
+                      <img class="payment-img" src="images/wallet.png">
+                      <div class="pl-5">
+                        <h4>Wallet</h4>
+                      </div>
+                    </div>
+                    <i class="pe-7s-angle-right"></i>
                   </div>
                 </div>
               </div>
